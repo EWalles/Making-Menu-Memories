@@ -23,10 +23,7 @@ const createMeal = (meal) => {
 	}
 	
 	const newInnerHTML = `
-		<div class = "letter">
-			<h4>${meal.strMeal}</h4>	
-		</div>
-
+		<h4>${meal.strMeal}</h4>	
 		<div class="row">
 			<div class="columns five">
 				<img src="${meal.strMealThumb}" alt="Meal Image">
@@ -48,9 +45,3 @@ const createMeal = (meal) => {
 	
 	meal_container.innerHTML = newInnerHTML;
 }
-
-
-
-
-
-
