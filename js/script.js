@@ -29,7 +29,6 @@ const createMeal = (meal) => {
 
 		<div class="row">
 			<div class="columns five">
-			
 				<img src="${meal.strMealThumb}" alt="Meal Image">
 				${meal.strCategory ? `<p><strong>Category:</strong> ${meal.strCategory}</p>` : ''}
 				${meal.strArea ? `<p><strong>Area:</strong> ${meal.strArea}</p>` : ''}
