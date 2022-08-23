@@ -23,7 +23,10 @@ const createMeal = (meal) => {
 	}
 	
 	const newInnerHTML = `
-		<h4>${meal.strMeal}</h4>	
+		<div class = "letter">
+			<h4>${meal.strMeal}</h4>	
+		</div>
+
 		<div class="row">
 			<div class="columns five">
 			
