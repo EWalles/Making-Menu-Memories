@@ -1,10 +1,10 @@
 //Codepen help from Florin Pop 
 //shift from fetch to ajax with jquery
 const URL ="https://www.themealdb.com/api/json/v1/1/random.php"
-const $getMeal = $('#getmeal')
+const $getmeal = $('#getmeal')
 const $container = $('#meal')
 
-$getMeal.addEventListener('click', () => {
+get_meal_btn.addEventListener('click', () => {
 	fetch('https://www.themealdb.com/api/json/v1/1/random.php')
 		.then(res => res.json())
 		.then(res => {
