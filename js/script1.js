@@ -3,10 +3,9 @@ const URL = "https://www.themealdb.com/api/json/v1/1/random.php";
 /////////////////////////
 // CACHED ELEMENTS / ELEMENTS REFRENCES
 /////////////////////////
-const $meals = $( '#meals' )
-const $cat = $('#category')
-const $ingredients = $( '#ingredients' )
-const $instruction = $('#instruction')
+const $meal=$('#meal')
+const $cat = $('#cat')
+const $source = $("#source")
 const $form = $("form")
 const $input = $('input[type="text"]')
 
@@ -25,16 +24,19 @@ function handleGetData (event)
     event.preventDefault()
     console.log("function works");
     userInput = $input.val()
-    if ( userInput == '' ) return;
+   // if ( userInput === '' ) return
 
     $.ajax(URL).then(
       function (data) {
         console.log("recipe is ready!");
-            console.log( meal );
-            $cat.text( meal.Cat)
-            $ingredients.text( data.Ingredients )
-            $instruction.text( data.Instruction)
+        
+        $meal.text(data.meals[0].strMeal)
+        $cat.text(data.meals[0].strCategory)
+        $source.text(data.meals[0].strSource)
+        console.log(data)
+            
             $( 'main' ).append()
+            
            
       },
       function (error) {
