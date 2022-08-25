@@ -6,8 +6,7 @@ Tired of the same old food I built this to pull up random recipes.
 
 <ul>
 <li>Menu
-<li>Recipe
-<li>Puppy Tax
+<li>Source
 </ul>
 ## Technologies Used<br>
 <ul>
@@ -19,7 +18,7 @@ Tired of the same old food I built this to pull up random recipes.
 ## Images
 
 ![recipe](https://github.com/EWalles/Making-Menu-Memories/blob/master/recipe.png)
-![pup](https://github.com/EWalles/Making-Menu-Memories/blob/master/pupshot.png)
+
 
 <h1>Next Steps in the future</h1>
 <ul>
