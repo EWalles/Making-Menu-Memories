@@ -9,6 +9,17 @@ Tired of the same old food I built this to pull up random recipes.
 <li>Recipe
 <li>Puppy Tax
 </ul>
+## Technologies Used<br>
+<ul>
+<li>- HTML5
+<li>- CSS3
+<li>- JavaScript
+<li>- jQuery
+<br>
+## Images
+
+![recipe](https://github.com/EWalles/Making-Menu-Memories/blob/master/recipe.png)
+![pup](https://github.com/EWalles/Making-Menu-Memories/blob/master/pupshot.png)
 
 <h1>Next Steps in the future</h1>
 <ul>
