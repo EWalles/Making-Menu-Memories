@@ -13,14 +13,14 @@ const $instruction = $('instruction')
 /////////////////////////
 // EVENT LISTENERS
 /////////////////////////
-$form.on( 'submit', handleGetData )
+$event.on( 'submit', handleGetData )
 
 /////////////////////////
 // FUNCTIONS
 /////////////////////////
-function handleGetData (meal)
+function handleGetData (event)
 {
-    meal.preventDefault()
+    event.preventDefault()
     userInput = $input.val()
     if ( userInput === '' ) return;
 
