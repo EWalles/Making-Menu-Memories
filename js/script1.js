@@ -1,5 +1,3 @@
-console.log("connected");
-
 const URL = "https://www.themealdb.com/api/json/v1/1/random.php";
 
 /////////////////////////
@@ -8,12 +6,16 @@ const URL = "https://www.themealdb.com/api/json/v1/1/random.php";
 const $meals = $( '#meals' )
 const $cat = $('#category')
 const $ingredients = $( '#ingredients' )
-const $instruction = $('instruction')
+const $instruction = $('#instruction')
+const $form = $("form")
+const $input = $('input[type="text"]')
+
+
 
 /////////////////////////
 // EVENT LISTENERS
 /////////////////////////
-$event.on( 'submit', handleGetData )
+$form.on( 'submit', handleGetData )
 
 /////////////////////////
 // FUNCTIONS
@@ -21,18 +23,19 @@ $event.on( 'submit', handleGetData )
 function handleGetData (event)
 {
     event.preventDefault()
+    console.log("function works");
     userInput = $input.val()
-    if ( userInput === '' ) return;
+    if ( userInput == '' ) return;
 
-    $.ajax(URL+userInput).then(
+    $.ajax(URL).then(
       function (data) {
         console.log("recipe is ready!");
             console.log( meal );
             $cat.text( meal.Cat)
             $ingredients.text( data.Ingredients )
             $instruction.text( data.Instruction)
-            $( 'main' ).append( `<img src="${ data.Poster }" alt="${ data.Title }"/>` )
-            $input.val('')
+            $( 'main' ).append()
+           
       },
       function (error) {
           console.log( "we broke it!" )
