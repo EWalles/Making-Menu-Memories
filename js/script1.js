@@ -1,3 +1,4 @@
+//ajax puppy tax
 var btn = document.querySelector("#btn");
 var img = document.querySelector("#photo");
 //listen for clicks on button
