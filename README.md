@@ -14,6 +14,8 @@ Tired of the same old food I built this to pull up random recipes.
 - CSS3
 - JavaScript
 - jQuery
+## Images
+
 ![recipe](https://github.com/EWalles/Making-Menu-Memories/blob/master/recipe.png)
 ![pup](https://github.com/EWalles/Making-Menu-Memories/blob/master/pupshot.png))
 
