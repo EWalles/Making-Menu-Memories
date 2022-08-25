@@ -9,6 +9,8 @@ Tired of the same old food I built this to pull up random recipes.
 <li>Recipe
 <li>Puppy Tax
 </ul>
+![Recipe](recipe.png)
+![pup](pupshot.png)
 
 <h1>Next Steps in the future</h1>
 <ul>
