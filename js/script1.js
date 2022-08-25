@@ -1,23 +1,42 @@
+console.log("connected");
 
+const URL = "https://www.themealdb.com/api/json/v1/1/random.php";
 
-//listen for clicks on button
-drink.addEventListener("click", function(){
-  //make API request when button is clicked
-  var XHR = new XMLHttpRequest();
-  
-  XHR.onreadystatechange = function(){
-    if(XHR.readyState == 4){
-      if(XHR.status == 200){
-        var url = JSON.parse(XHR.responseText).message;
-        img.src = url;
-      } else{
-        console.log("Error!!!");
+/////////////////////////
+// CACHED ELEMENTS / ELEMENTS REFRENCES
+/////////////////////////
+const $meals = $( '#meals' )
+const $cat = $('#category')
+const $ingredients = $( '#ingredients' )
+const $instruction = $('instruction')
+
+/////////////////////////
+// EVENT LISTENERS
+/////////////////////////
+$form.on( 'submit', handleGetData )
+
+/////////////////////////
+// FUNCTIONS
+/////////////////////////
+function handleGetData (meal)
+{
+    meal.preventDefault()
+    userInput = $input.val()
+    if ( userInput === '' ) return;
+
+    $.ajax(URL+userInput).then(
+      function (data) {
+        console.log("recipe is ready!");
+            console.log( meal );
+            $cat.text( meal.Cat)
+            $ingredients.text( data.Ingredients )
+            $instruction.text( data.Instruction)
+            $( 'main' ).append( `<img src="${ data.Poster }" alt="${ data.Title }"/>` )
+            $input.val('')
+      },
+      function (error) {
+          console.log( "we broke it!" )
+          console.log(error);
       }
-    }
-  }
-  XHR.open("GET", "https://dog.ceo/api/breeds/image/random");
-  XHR.send(); 
-});
-
-
-
+    );
+}
