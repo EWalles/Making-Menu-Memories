@@ -1,8 +1,4 @@
 //Codepen help from Florin Pop 
-//shift from fetch to ajax with jquery
-
-
-
 
 const get_meal_btn = document.getElementById('get_meal');
 const meal_container = document.getElementById('meal');
