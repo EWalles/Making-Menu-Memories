@@ -1,8 +1,7 @@
-//ajax puppy tax
-var btn = document.querySelector("#btn");
-var img = document.querySelector("#photo");
+
+
 //listen for clicks on button
-btn.addEventListener("click", function(){
+drink.addEventListener("click", function(){
   //make API request when button is clicked
   var XHR = new XMLHttpRequest();
   
