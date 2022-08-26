@@ -8,6 +8,9 @@ Tired of the same old food I built this to pull up random recipes.
 <li>Menu
 <li>Source
 </ul>
+##Getting Started
+![menu](https://ewalles.github.io/Making-Menu-Memories/)
+
 ## Technologies Used<br>
 <ul>
 <li>- HTML5
@@ -15,6 +18,7 @@ Tired of the same old food I built this to pull up random recipes.
 <li>- JavaScript
 <li>- jQuery
 <br>
+
 ## Images
 
 ![recipe](https://github.com/EWalles/Making-Menu-Memories/blob/master/recipe.png)
