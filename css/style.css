@@ -6,6 +6,7 @@
 
 body {
 	font-family: 'Courier New', Courier, monospace;
+	background-color: #DCDCDC;
 	display: flex;
 	flex-direction: column;
 	justify-content: left;
