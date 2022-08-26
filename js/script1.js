@@ -32,7 +32,6 @@ function handleGetData (event)
         
         $meal.text(data.meals[0].strMeal)
         $cat.text(data.meals[0].strCategory)
-        $img.text(data.meals[0].strMealThumb)
         $source.text(data.meals[0].strSource)
         console.log(data)
             
