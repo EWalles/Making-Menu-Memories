@@ -23,6 +23,7 @@ Tired of the same old food I built this to pull up random recipes.
 <h1>Next Steps in the future</h1>
 <ul>
 <li>Expand the ingredient list to build a grocery shopping list
+<li> Hyperlink the source
 <li>Include Drinks for the meals
 <li> Maybe get youtube videos
 </ul>
