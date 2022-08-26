@@ -9,7 +9,8 @@ Tired of the same old food I built this to pull up random recipes.
 <li>Source
 </ul>
 ##Getting Started
-![menu](https://ewalles.github.io/Making-Menu-Memories/)
+<br>
+https://ewalles.github.io/Making-Menu-Memories/
 
 ## Technologies Used<br>
 <ul>
